@@ -13,16 +13,14 @@ std::string find_replace(std::string_view text, std::string_view old_str, std::s
         bool matched = true;
         for (unsigned j=0; j < old_str.size(); j++)
         {
-            if (text[i+j] != old_str[j])
+            if (i+j >= text.size() || text[i+j] != old_str[j])
             {
                 matched = false;
                 break;
             }
         }
         if (matched)
-        {
             instances.push_back(i);
-        }
     }
 
     if (instances.empty())
