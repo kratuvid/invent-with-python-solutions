@@ -24,5 +24,7 @@ int main(int argc, char** argv)
         i++;
     } while (number != 0);
 
+    std::reverse(in_str.begin(), in_str.end());
+
     std::cout << in_str << std::endl;
 }
