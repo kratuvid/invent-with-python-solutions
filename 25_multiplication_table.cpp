@@ -45,7 +45,7 @@ int main(int argc, char** argv)
 
             if (col != upto)
             {
-                std::cout.flags(orig_flags); std::cout << ' ';
+                std::cout.flags(orig_flags); std::cout << first_sep;
             }
         }
 
